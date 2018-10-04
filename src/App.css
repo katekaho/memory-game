@@ -1,32 +1,132 @@
-.App {
+.title {
+  margin-top: 170px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.in-game {
+  margin-top: 50px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.line {
+  background-color: black;
+  height: 1px;
+  width: 400px;
+  margin: 18px auto 0 auto;
+}
+
+.app-wrapper {
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 700px;
+  width: 70%;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px auto;
+  width: 300px;
+}
+
+.buttons-wrapper h3 {
+  padding: 6px;
+}
+
+.selected{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.options-wrapper {
   display: flex;
   flex-direction: column;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  width: 300px;
+}
+
+.options-wrapper h2 {
+  margin-top: 25px;
+}
+
+.room-wrapper {
+  margin-top: 10px;
+}
+
+.game-wrapper {
+  margin-top: 20px;
+}
+
+.game-content {
+  margin-top: 35px;
+}
+
+.top-information, .game-content, .status-element {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-element {
+  width: 110px;
+}
+
+.game-status-wrapper {
+  flex: 1;
+}
+
+.game-status-wrapper h2 {
+  margin-bottom: 20px;
+}
+
+.grid-wrapper {
+  display: grid;
+  flex-basis: 300px;
+  grid-gap: 5px;
+  height: 300px;
+}
+
+
+.two {
+  grid-template-columns: repeat(2, calc(300px/2));
+  grid-template-rows: repeat(2, calc(300px/2));
+}
+
+.four {
+  grid-template-columns: repeat(4, calc(300px/4));
+  grid-template-rows: repeat(4, calc(300px/4));
+}
+
+.six {
+  grid-template-columns: repeat(6, calc(300px/6));
+  grid-template-rows: repeat(6, calc(300px/6));
+}
+
+.eight {
+  grid-template-columns: repeat(8, calc(300px/8));
+  grid-template-rows: repeat(8, calc(300px/8));
+}
+
+.ten {
+  grid-template-columns: repeat(10, calc(300px/10));
+  grid-template-rows: repeat(10, calc(300px/10));
+}
+
+.square {
   align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.not-flipped {
+  background-color: gray;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.win {
+  margin-top: 10px;
 }
