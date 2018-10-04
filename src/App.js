@@ -43,8 +43,13 @@ class App extends Component {
   }
 
   handleResetClicked() {
+    clearInterval(this.state.interval);
     this.createGrid();
     this.setState({time: 0, score: 0, endGame: false});
+    let interval = setInterval(() => {
+      this.setState({time: this.state.time + 1})
+    }, 1000)
+    this.setState({interval: interval})
   }
 
   handleNavigateFromGame() {
